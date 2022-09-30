@@ -35,3 +35,12 @@ As detailed in this week’s lecture, the detection of edges is pivotal in the t
 
 1. Implementation of a Sobel filter requires convolution. You have already used convolution in OpenCV for last week's task -- so feel free to look back at those labsheets and review how convolution can be implemented.
 2. Similar to the sharpening filter from last week, convolution with Sobel filter can result in a negative response value and generally in a wide range of values. Think carefully about the quantisation of these results, the handling of the image boundary and the data type of the matrix in which you will hold them.
+
+## Task 2: Hough Circle Transform
+
+In this task, you will be using the gradient images from task one and perform a Hough Circle transform to detect the location of the coins in the provided imaged (… and one coin image of your own choice).
+
+### Task Breakdown
+
+1. Take the gradient magnitude image you generated for Task 1 and apply a thresholding operation (e.g. set all pixels larger than a threshold value $T$ to 255 and all others to 0) to determine the set of pixels with the strongest gradient magnitudes to be considered for circle detection.
+
