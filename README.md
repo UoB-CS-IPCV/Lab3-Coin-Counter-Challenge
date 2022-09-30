@@ -1,0 +1,37 @@
+# Lab 3: Coin Counter Challenge
+
+> We run our labs with [Python 3.6+](https://www.python.org/downloads/).
+> For Windows, you might want to use [Conda](https://www.anaconda.com/products/distribution). 
+
+## Using the lab sheet
+
+There are two ways to use the lab sheet, you can either:
+
+- [create a new repo from this template](https://github.com/UoB-CS-IPCV/Lab3-Coin-Counter-Challenge/generate) - **this is the recommended way**
+- download a [zip file](https://github.com/UoB-CS-IPCV/Lab3-Coin-Counter-Challenge/archive/master.zip)
+
+## Overview
+
+- Counting objects is an essential task in many vision applications. 
+- Your task is to implement an OpenCV program that can count round coins from basic imagery by utilising the Hough transform. 
+- Try to implement the Hough transform explicitly, that is without using the pre-implemented function calls for the Hough Transform. You can utilise your code from former labs.
+- This task will be formative and we will, as always, be there during labs to provide you with help and feedback. The assignment is to be worked on individually and will prepare you for the upcoming summative assessment.
+
+## Task 1: Sobel Edge Detection
+
+As detailed in this week’s lecture, the detection of edges is pivotal in the task of distinguishing shapes. Your first task is to implement the Sobel edge detector by convolving an image with the Sobel kernels and calculate the gradient information. (without using the convolutional and sobel functions offered by OpenCV.)
+
+### Task Breakdown
+
+1. Implement a function `sobel`
+2. This function should take an image as an input and compute the following
+    - Image containing the derivative in the $x$ direction $\frac{\partial f}{\partial x}$
+    - Image containing the derivative in the $y$ direction $\frac{\partial f}{\partial y}$
+    - Image containing magnitude of the gradient $\nabla f(x,y) 
+    - Image containing the direction of the gradient $\rho$
+3. Be able to display the four images above and discuss their appearance in relation to the original image
+
+### Implementation Details
+
+1. Implementation of a Sobel filter requires convolution. You have already used convolution in OpenCV for last week's task -- so feel free to look back at those labsheets and review how convolution can be implemented.
+2. Similar to the sharpening filter from last week, convolution with Sobel filter can result in a negative response value and generally in a wide range of values. Think carefully about the quantisation of these results, the handling of the image boundary and the data type of the matrix in which you will hold them.
