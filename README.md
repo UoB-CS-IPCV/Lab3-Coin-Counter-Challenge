@@ -43,4 +43,17 @@ In this task, you will be using the gradient images from task one and perform a 
 ### Task Breakdown
 
 1. Take the gradient magnitude image you generated for Task 1 and apply a thresholding operation (e.g. set all pixels larger than a threshold value $T$ to 255 and all others to 0) to determine the set of pixels with the strongest gradient magnitudes to be considered for circle detection.
+2. Implement a function `hough` that calculates the (3D) Hough Space $(x_0, y_0, r)$ from the thresholded gradient magnitude image and the gradient orientation image. You need to make a decision about the size (i.e. number of cells) in your Hough Space. The function should at least have the following input parameters: 
+    - The thresholded gradient magnitude image and the gradient orientation image
+    - Threshold by which a peak in the Hough Space is actually considered a circle
+    - You may also wish to consider minimum / maximum radius and distance between circle centres.
+3. Display the Hough Space for each image. As the Hough Space for circles is 3D, you can create a 2D image by summing the values of the radius dimension. This will highlight circle centres.
+4. Threshold the Hough Space and display your set of found circles on the original images.
+
+### Implementation Details
+
+- Consider representing your Hough Space as a 3D array.
+- When you are displaying the Hough Space, you might want to take the logarithm of the image to make the image values more descriptive.
+
+
 
