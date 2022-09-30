@@ -23,17 +23,17 @@ As detailed in this week’s lecture, the detection of edges is pivotal in the t
 
 ### Task Breakdown
 
-1. Implement a function `sobel`
+1. Implement a function `sobel`.
 2. This function should take an image as an input and compute the following
     - Image containing the derivative in the $x$ direction $\frac{\partial f}{\partial x}$
     - Image containing the derivative in the $y$ direction $\frac{\partial f}{\partial y}$
-    - Image containing magnitude of the gradient $\nabla f(x,y) 
+    - Image containing magnitude of the gradient $\nabla f(x,y)$
     - Image containing the direction of the gradient $\rho$
-3. Be able to display the four images above and discuss their appearance in relation to the original image
+3. Be able to display the four images above and discuss their appearance in relation to the original image.
 
 ### Implementation Details
 
-1. Implementation of a Sobel filter requires convolution. You have already used convolution in OpenCV for last week's task -- so feel free to look back at those labsheets and review how convolution can be implemented.
+1. Implementation of a Sobel filter requires convolution. You have already used convolution in OpenCV for last week's task - so feel free to look back at those labsheets and review how convolution can be implemented.
 2. Similar to the sharpening filter from last week, convolution with Sobel filter can result in a negative response value and generally in a wide range of values. Think carefully about the quantisation of these results, the handling of the image boundary and the data type of the matrix in which you will hold them.
 
 ## Task 2: Hough Circle Transform
