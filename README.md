@@ -17,6 +17,8 @@ There are two ways to use the lab sheet, you can either:
 - Try to implement the Hough transform explicitly, that is without using the pre-implemented function calls for the Hough Transform. You can utilise your code from former labs.
 - This task will be formative and we will, as always, be there during labs to provide you with help and feedback. The assignment is to be worked on individually and will prepare you for the upcoming summative assessment.
 
+<img src="coins1.png" height=150> <img src="coins2.png" height=150> <img src="coins3.png" height=150> 
+
 ## Task 1: Sobel Edge Detection
 
 As detailed in this week’s lecture, the detection of edges is pivotal in the task of distinguishing shapes. Your first task is to implement the Sobel edge detector by convolving an image with the Sobel kernels and calculate the gradient information. (without using the convolutional and sobel functions offered by OpenCV.)
@@ -30,6 +32,16 @@ As detailed in this week’s lecture, the detection of edges is pivotal in the t
     - Image containing magnitude of the gradient $\nabla f(x,y)$
     - Image containing the direction of the gradient $\rho$
 3. Be able to display the four images above and discuss their appearance in relation to the original image.
+
+
+<details>
+    <summary>Hint</summary>
+
+$$\frac{\partial}{\partial x} \approx {\left\lbrack \matrix{-1 & 0 & 1 \cr -2 & 0 & 2 \cr -1 & 0 & 1} \right\rbrack}, \ \ \frac{\partial}{\partial y} \approx {\left\lbrack \matrix{-1 & -2 & -1 \cr 0 & 0 & 0 \cr 1 & 2 & 1} \right\rbrack}$$
+
+$$ grad(f) = |\bigtriangledown f(x,y)| = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 + \left(\frac{\partial f}{\partial y}\right)^2}, \ \ \psi = \text{arctan}\left( \frac{\partial f/\partial y}{\partial f/ \partial x} \right) $$
+
+</details>
 
 ### Implementation Details
 
