@@ -72,6 +72,8 @@ In this task, you will be using the gradient images from task one and perform a 
 <details>
     <summary>Hint</summary>
 
+Check Lecture 08:Shape Detection, page 14.
+
 <img src="img/houghcircle.png" width=300>
 
 
