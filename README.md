@@ -37,7 +37,9 @@ As detailed in this week’s lecture, the detection of edges is pivotal in the t
 <details>
     <summary>Hint</summary>
 
-$$\frac{\partial}{\partial x} \approx {\left\lbrack \matrix{-1 & 0 & 1 \cr -2 & 0 & 2 \cr -1 & 0 & 1} \right\rbrack}, \ \ \frac{\partial}{\partial y} \approx {\left\lbrack \matrix{-1 & -2 & -1 \cr 0 & 0 & 0 \cr 1 & 2 & 1} \right\rbrack}$$
+<img src="img/gradients.jpg" height=100>
+
+$$ \frac{\partial}{\partial x} \approx {\left\lbrack \matrix{-1 & 0 & 1 \cr -2 & 0 & 2 \cr -1 & 0 & 1} \right\rbrack}, \ \ \frac{\partial}{\partial y} \approx {\left\lbrack \matrix{-1 & -2 & -1 \cr 0 & 0 & 0 \cr 1 & 2 & 1} \right\rbrack}$$
 
 $$ grad(f) = |\bigtriangledown f(x,y)| = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 + \left(\frac{\partial f}{\partial y}\right)^2}, \ \ \psi = \text{arctan}\left( \frac{\partial f/\partial y}{\partial f/ \partial x} \right) $$
 
@@ -67,5 +69,10 @@ In this task, you will be using the gradient images from task one and perform a 
 - Consider representing your Hough Space as a 3D array.
 - When you are displaying the Hough Space, you might want to take the logarithm of the image to make the image values more descriptive.
 
+<details>
+    <summary>Hint</summary>
+
+<img src="img/houghcircle.png" width=300>
 
 
+</details>
