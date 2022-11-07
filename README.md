@@ -45,6 +45,13 @@ $$ grad(f) = |\bigtriangledown f(x,y)| = \sqrt{\left(\frac{\partial f}{\partial 
 
 </details>
 
+<details>
+    <summary>Hint</summary>
+
+If you have an error: ZeroDivisionError: division by zero, add a small value to denominator, e.g. $$\psi = \text{arctan}\left( \frac{\partial f/\partial y}{\partial f/ \partial x + e^{-10}} \right) $$
+
+</details>
+
 ### Implementation Details
 
 1. Implementation of a Sobel filter requires convolution. You have already used convolution in OpenCV for last week's task - so feel free to look back at those labsheets and review how convolution can be implemented.
