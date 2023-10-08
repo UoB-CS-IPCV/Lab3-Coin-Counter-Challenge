@@ -37,7 +37,7 @@ As detailed in this week’s lecture, the detection of edges is pivotal in the t
 <details>
     <summary>Hint</summary>
 
-<img src="img/gradients.jpg" height=100>
+<img src="https://github.com/UoB-CS-IPCV/Lab3-Coin-Counter-Challenge/tree/main/img/gradients.jpg" height=100>
 
 $$\frac{\partial}{\partial x} \approx {\left\lbrack \matrix{-1 & 0 & 1 \cr -2 & 0 & 2 \cr -1 & 0 & 1} \right\rbrack}, \ \ \frac{\partial}{\partial y} \approx {\left\lbrack \matrix{-1 & -2 & -1 \cr 0 & 0 & 0 \cr 1 & 2 & 1} \right\rbrack}$$
 
