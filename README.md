@@ -39,9 +39,9 @@ As detailed in this week’s lecture, the detection of edges is pivotal in the t
 
 <img src="img/gradients.jpg" height=100>
 
-$$ \frac{\partial}{\partial x} \approx {\left\lbrack \matrix{-1 & 0 & 1 \cr -2 & 0 & 2 \cr -1 & 0 & 1} \right\rbrack}, \ \ \frac{\partial}{\partial y} \approx {\left\lbrack \matrix{-1 & -2 & -1 \cr 0 & 0 & 0 \cr 1 & 2 & 1} \right\rbrack}$$
+$$\frac{\partial}{\partial x} \approx {\left\lbrack \matrix{-1 & 0 & 1 \cr -2 & 0 & 2 \cr -1 & 0 & 1} \right\rbrack}, \ \ \frac{\partial}{\partial y} \approx {\left\lbrack \matrix{-1 & -2 & -1 \cr 0 & 0 & 0 \cr 1 & 2 & 1} \right\rbrack}$$
 
-$$ grad(f) = |\bigtriangledown f(x,y)| = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 + \left(\frac{\partial f}{\partial y}\right)^2}, \ \ \psi = \text{arctan}\left( \frac{\partial f/\partial y}{\partial f/ \partial x} \right) $$
+$$grad(f) = |\bigtriangledown f(x,y)| = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 + \left(\frac{\partial f}{\partial y}\right)^2}, \ \ \psi = \text{arctan}\left( \frac{\partial f/\partial y}{\partial f/ \partial x} \right) $$
 
 </details>
 
@@ -78,8 +78,6 @@ In this task, you will be using the gradient images from task one and perform a 
 
 <details>
     <summary>Hint</summary>
-
-Check Lecture 08:Shape Detection, page 14.
 
 <img src="img/houghcircle.png" width=300>
 
